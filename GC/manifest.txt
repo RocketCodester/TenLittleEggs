@@ -1,0 +1,3 @@
+Main-Class: TenLittleEggs
+Class-Path: EnglishNumberToWords.jar
+

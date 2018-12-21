@@ -1,0 +1,22 @@
+javac -cp EnglishNumberToWords.jar Birds.java Bird.java TenLittleEggs.java
+java -classpath ".;EnglishNumberToWords.jar" "TenLittleEggs"
+
+javac -d build/classes/ src/*.java
+
+cd "C:/Users/$(whoami)/Documents/NetBeansProjects/TenLittleEggs"
+
+// cmd set classpath
+set CLASSPATH="C:\Users\$(whoami)\Documents\NetBeansProjects\TenLittleEggs\dist\lib\EnglishNumberToWords.jar"
+
+
+// compile the classes
+make
+
+// run the .class file
+java TenLittleEggs
+
+// compile the .jar file
+jar cvfm TenLittleEggs.jar manifest.txt *.class 
+
+// run the .jar file
+java -jar TenLittleEggs.jar
